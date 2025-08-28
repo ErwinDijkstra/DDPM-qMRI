@@ -22,10 +22,10 @@ We also acknowledge the use of [MONAI](https://monai.io) as the core framework f
 
 To run this project, you need the following Python packages:
 
-- **torch >= 2.0.0**: core PyTorch library (ensure correct CUDA version for GPU)  
-- **torchvision >= 0.15.0**: PyTorch vision utilities  
+- **torch**: core PyTorch library (ensure correct CUDA version for GPU)  
+- **torchvision**: PyTorch vision utilities  
 - **monai-weekly[tqdm]**: MONAI framework including generative modules  
-- **numpy >= 1.21**: numerical operations  
-- **scipy >= 1.10**: scientific computing  
-- **matplotlib >= 3.7**: visualization of PD/T1 maps  
-- **tqdm >= 4.65.0**: progress bars  
+- **numpy**: numerical operations  
+- **scipy**: scientific computing  
+- **matplotlib**: visualization of PD/T1 maps  
+- **tqdm**: progress bars  
