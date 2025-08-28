@@ -1,12 +1,12 @@
 # DDPM for Quantitative MRI Parameter Estimation
 
-This repository contains code for training and inference of **Denoising Diffusion Probabilistic Models (DDPMs)** applied to quantitative MRI (qMRI), focusing on Proton Density (PD) and T1 parameter mapping.  
+This repository contains code for training and inference of **Denoising Diffusion Probabilistic Models (DDPMs)** applied to quantitative MRI (qMRI), focusing on Proton Density (PD) and T1 parameter mapping.
 
 The implementation is based on **MONAI’s diffusion model framework** and adapts the workflow for inverse problems in MRI.
 
 ---
 
-##  Reference & Acknowledgment
+## Reference & Acknowledgment
 
 This project is a **simplified version** of the following work:
 
@@ -17,3 +17,16 @@ This project is a **simplified version** of the following work:
 We also acknowledge the use of [MONAI](https://monai.io) as the core framework for building and training diffusion models.
 
 ---
+
+## Requirements
+
+To run this project, you need the following Python packages:
+
+- **torch >= 2.0.0**: core PyTorch library (ensure correct CUDA version for GPU)  
+- **torchvision >= 0.15.0**: PyTorch vision utilities  
+- **monai-weekly[tqdm]**: MONAI framework including generative modules  
+- **numpy >= 1.21**: numerical operations  
+- **scipy >= 1.10**: scientific computing  
+- **matplotlib >= 3.7**: visualization of PD/T1 maps  
+- **pillow >= 9.0**: image handling  
+- **tqdm >= 4.65.0**: progress bars  
