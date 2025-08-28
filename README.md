@@ -28,5 +28,4 @@ To run this project, you need the following Python packages:
 - **numpy >= 1.21**: numerical operations  
 - **scipy >= 1.10**: scientific computing  
 - **matplotlib >= 3.7**: visualization of PD/T1 maps  
-- **pillow >= 9.0**: image handling  
 - **tqdm >= 4.65.0**: progress bars  
