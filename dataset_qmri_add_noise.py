@@ -37,14 +37,15 @@ class IPIIDataset(Dataset):
         signal = np.abs(signal)
 
         # add additional noise to signal
-        #std = np.random.normal(0.05, 0.05)
-        #std = np.clip(std, 0.01, 0.3)
-        #std = 0.1
-        #noise_signal = np.random.normal(0.0, std, signal.shape).astype(np.float32)
-        #signal = signal
-        #signal = np.clip(signal, 0, 2).astype(np.float32)
+        std = np.random.normal(0.05, 0.05)
+        std = np.clip(std, 0.01, 0.3)
+        std = 0.1
+        noise_signal = np.random.normal(0.0, std, signal.shape).astype(np.float32)
+        signal = signal
+        signal = np.clip(signal, 0, 2).astype(np.float32)
 
         # scale label
         label = 2 * self.tanh(label) - 1
 
         return signal, label
+
