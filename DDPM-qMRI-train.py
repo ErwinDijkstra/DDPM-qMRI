@@ -45,7 +45,7 @@ LR = 2.5e-5
 NUM_TIMESTEPS = 1000
 
 # Training Pipeline
-def build_model() -> DiffusionModelUNet:
+def build_model():
     """Construct the DDPM UNet model."""
     model = DiffusionModelUNet(
         spatial_dims=2,
@@ -137,6 +137,7 @@ def train():
 
 if __name__ == "__main__":
     train()
+
 
 
 
