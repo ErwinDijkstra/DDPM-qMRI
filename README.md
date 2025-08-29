@@ -1,20 +1,18 @@
 # DDPM for Quantitative MRI Parameter Estimation
 
-This repository contains code for training and inference of **Denoising Diffusion Probabilistic Models (DDPMs)** applied to quantitative MRI (qMRI), focusing on Proton Density (PD) and T1 parameter mapping.
+This repository provides code for training and inference of **Denoising Diffusion Probabilistic Models (DDPMs)** applied to quantitative MRI (qMRI), with a focus on **Proton Density (PD)** and **T1 parameter mapping**.
 
-The implementation is based on **MONAI’s diffusion model framework** and adapts the workflow for inverse problems in MRI.
+The implementation leverages the **[MONAI diffusion framework](https://monai.io/)** and adapts it for solving **inverse problems in MRI reconstruction and parameter estimation**.
 
 ---
 
-## Reference & Acknowledgment
+## Reference & Acknowledgment  
 
-This project is a **simplified version** of the following work:
+This project is a **simplified implementation** inspired by the following work:  
 
-> Sun, L., et al. *Diffusion Models for Inverse Problems in Quantitative MRI.*  
-> In: Medical Imaging with Deep Learning (MIDL 2024), Lecture Notes in Computer Science, vol 15213.  
-> Springer, Cham. https://doi.org/10.1007/978-3-031-72744-3_13
+> Wang, S., Ma, H., Hernandez-Tamames, J.A., Klein, S., Poot, D.H.J. (2025). *qMRI Diffuser: Quantitative T1 Mapping of the Brain Using a Denoising Diffusion Probabilistic Model*. In: Mukhopadhyay, A., Oksuz, I., Engelhardt, S., Mehrof, D., Yuan, Y. (eds) Deep Generative Models. DGM4MICCAI 2024. Lecture Notes in Computer Science, vol 15224. Springer, Cham. [https://doi.org/10.1007/978-3-031-72744-3_13](https://doi.org/10.1007/978-3-031-72744-3_13)  
 
-We also acknowledge the use of [MONAI](https://monai.io) as the core framework for building and training diffusion models.
+We also refer to the **[Generative Models Tutorial](https://github.com/Project-MONAI/GenerativeModels/tree/main/tutorials)** from MONAI for guidance and best practices.  
 
 ---
 
