@@ -60,7 +60,7 @@ def build_model() -> DiffusionModelUNet:
     return model
 
 
-def load_model(model: DiffusionModelUNet, ckpt_path: str) -> DiffusionModelUNet:
+def load_model(model: DiffusionModelUNet, ckpt_path: str):
     """Load model weights from checkpoint."""
     state_dict = torch.load(ckpt_path, map_location=DEVICE)
     model.load_state_dict(state_dict)
@@ -68,7 +68,7 @@ def load_model(model: DiffusionModelUNet, ckpt_path: str) -> DiffusionModelUNet:
     return model
 
 
-def load_condition(signal_path: str) -> torch.Tensor:
+def load_condition(signal_path: str):
     """Load conditioning signal from pickle file."""
     with open(signal_path, "rb") as f:
         signal = pickle.load(f)
@@ -152,6 +152,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
