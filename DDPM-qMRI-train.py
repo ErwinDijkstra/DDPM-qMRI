@@ -39,8 +39,8 @@ from dataset_qmri_add_noise import IPIIDataset  # <-- custom dataset
 # -------------------------------------------------------------------------
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-DATA_PATH = r"C:\Users\erwin\Desktop\DDPM_InverseProblems\IPiI Final Project data\slices"
-MODEL_SAVE_PATH = r"C:\Users\erwin\Desktop\DDPM_InverseProblems\models\diffusion_model.pt"
+DATA_PATH = ""
+MODEL_SAVE_PATH = ""
 
 TOTAL_EPOCHS = 2000
 BATCH_SIZE = 4
@@ -143,4 +143,5 @@ def train():
 
 if __name__ == "__main__":
     train()
+
 
