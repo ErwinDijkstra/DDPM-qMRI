@@ -10,9 +10,13 @@ from quantitative MRI data.
 It is adapted from MONAI’s diffusion model framework and serves as a
 simplified implementation of the method described in:
 
-Sun, L., et al. *Diffusion Models for Inverse Problems in Quantitative MRI.*
-Medical Imaging with Deep Learning (MIDL 2024), Lecture Notes in Computer Science,
-vol 15213. Springer, Cham. https://doi.org/10.1007/978-3-031-72744-3_13
+Wang, S., Ma, H., Hernandez-Tamames, J.A., Klein, S., Poot, D.H.J. (2025). 
+qMRI Diffuser: Quantitative T1 Mapping of the Brain Using a Denoising Diffusion Probabilistic Model. 
+In: Mukhopadhyay, A., Oksuz, I., Engelhardt, S., Mehrof, D., Yuan, Y. (eds)
+Deep Generative Models. DGM4MICCAI 2024. Lecture Notes in Computer Science, vol 15224. Springer, Cham. [https://doi.org/10.1007/978-3-031-72744-3_13].
+
+This code is based on the MONAI Generative Models tutorial(https://github.com/Project-MONAI/GenerativeModels/tree/main/tutorials), 
+which provides a reference implementation of diffusion models 
 
 Authors: Erwin Dijkstra & Shishuai Wang
 Date: 2025-03-26
@@ -157,3 +161,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
