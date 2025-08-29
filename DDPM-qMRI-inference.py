@@ -15,7 +15,7 @@ qMRI Diffuser: Quantitative T1 Mapping of the Brain Using a Denoising Diffusion 
 In: Mukhopadhyay, A., Oksuz, I., Engelhardt, S., Mehrof, D., Yuan, Y. (eds)
 Deep Generative Models. DGM4MICCAI 2024. Lecture Notes in Computer Science, vol 15224. Springer, Cham. (https://doi.org/10.1007/978-3-031-72744-3_13).
 
-This code is based on the MONAI Generative Models tutorial(https://github.com/Project-MONAI/GenerativeModels/tree/main/tutorials), 
+This code is based on the MONAI Generative Models tutorial (https://github.com/Project-MONAI/GenerativeModels/tree/main/tutorials), 
 which provides a reference implementation of diffusion models 
 
 Authors: Erwin Dijkstra & Shishuai Wang
@@ -152,6 +152,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
