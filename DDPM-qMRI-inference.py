@@ -30,10 +30,7 @@ from generative.inferers import DiffusionInferer
 from generative.networks.nets import DiffusionModelUNet
 from generative.networks.schedulers import DDPMScheduler
 
-
-# -------------------------------------------------------------------------
 # Configuration
-# -------------------------------------------------------------------------
 os.environ["KMP_DUPLICATE_LIB_OK"] = "True"
 os.environ["MONAI_DATA_DIRECTORY"] = ""
 
@@ -47,10 +44,7 @@ TEST_SIGNAL_PATH = ""
 SAVE_PD_PATH = ""
 SAVE_T1_PATH = ""
 
-
-# -------------------------------------------------------------------------
 # Utility Functions
-# -------------------------------------------------------------------------
 def build_model() -> DiffusionModelUNet:
     """Construct and return the DDPM UNet model."""
     model = DiffusionModelUNet(
@@ -132,10 +126,7 @@ def save_results(est_pd, est_t1, save_pd_path, save_t1_path):
     with open(save_t1_path, "wb") as g:
         pickle.dump(est_t1, g)
 
-
-# -------------------------------------------------------------------------
 # Main Execution
-# -------------------------------------------------------------------------
 def main():
     """Main pipeline for inference and visualization."""
     # Build and load model
@@ -161,6 +152,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
