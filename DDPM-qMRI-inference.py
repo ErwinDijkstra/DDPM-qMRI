@@ -35,17 +35,17 @@ from generative.networks.schedulers import DDPMScheduler
 # Configuration
 # -------------------------------------------------------------------------
 os.environ["KMP_DUPLICATE_LIB_OK"] = "True"
-os.environ["MONAI_DATA_DIRECTORY"] = "C:/Users/erwin/MONAI_data"
+os.environ["MONAI_DATA_DIRECTORY"] = ""
 
 ROOT_DIR = os.environ.get("MONAI_DATA_DIRECTORY", "C:/Users/erwin/MonaiData")
 os.makedirs(ROOT_DIR, exist_ok=True)
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-MODEL_PATH = r"C:\Users\erwin\Desktop\DDPM_InverseProblems\models\diffusion_model.pt"
-TEST_SIGNAL_PATH = r"C:\Users\erwin\Desktop\DDPM_InverseProblems\test_invivo\invivo_s15.pkl"
-SAVE_PD_PATH = r"C:\Users\erwin\Desktop\DDPM_InverseProblems\Results2\invivo_s15_DDPM_PD.pkl"
-SAVE_T1_PATH = r"C:\Users\erwin\Desktop\DDPM_InverseProblems\Results2\invivo_s15_DDPM_T1.pkl"
+MODEL_PATH = ""
+TEST_SIGNAL_PATH = ""
+SAVE_PD_PATH = ""
+SAVE_T1_PATH = ""
 
 
 # -------------------------------------------------------------------------
@@ -161,5 +161,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
