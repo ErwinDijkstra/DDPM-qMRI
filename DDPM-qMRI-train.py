@@ -33,10 +33,7 @@ from generative.networks.nets import DiffusionModelUNet
 from generative.networks.schedulers import DDPMScheduler
 from dataset_qmri_add_noise import IPIIDataset  # <-- custom dataset
 
-
-# -------------------------------------------------------------------------
 # Configuration
-# -------------------------------------------------------------------------
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 DATA_PATH = ""
@@ -47,10 +44,7 @@ BATCH_SIZE = 4
 LR = 2.5e-5
 NUM_TIMESTEPS = 1000
 
-
-# -------------------------------------------------------------------------
 # Training Pipeline
-# -------------------------------------------------------------------------
 def build_model() -> DiffusionModelUNet:
     """Construct the DDPM UNet model."""
     model = DiffusionModelUNet(
@@ -143,5 +137,6 @@ def train():
 
 if __name__ == "__main__":
     train()
+
 
 
